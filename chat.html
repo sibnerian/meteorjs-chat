@@ -12,10 +12,12 @@
 
 <template name="chatBox">
     <p>Enter a user name: <input id="userName" type="text" value="" /></p>
+    <img src="http://www.yuethon.com/images/Penn_Crest.jpg">
+
     <div style="border: 1px solid; padding: 10px; overflow-y: scroll; height: 510px">
     {{#each messages}}<pre><span class="name">{{userName}}</span>: <span class="message">{{message}}</span></pre>{{/each}}
     </div>
     <form>
-        <p>Say something:<input id="chatInput" /><input type="submit" value="Say it" /></p>
+        <p>Say something:<textarea id="chatInput"></textarea><input type="submit" value="Say it" /></p>
     </form>
 </template>

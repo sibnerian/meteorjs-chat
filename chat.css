@@ -19,3 +19,7 @@ body{
 .name{
     font-weight: 600;
 }
+
+#chatInput{
+    width:95%;
+}
