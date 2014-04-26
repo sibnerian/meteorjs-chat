@@ -1,0 +1,21 @@
+<head>
+    <title>Meteor chat!</title>
+</head>
+<body>
+    <div class="main">
+        <h1>All-JavaScript Chat</h1>
+        <p>A really, really simple client/server chat web app written in JavaScript using the <a href="http://www.meteor.com">Meteor.js</a> platform.</p>
+        <p>Source code <a href="http://github.com/austinkeeley/meteorjs-chat">available</a> on GitHub.</p>
+        {{> chatBox}}
+    </div>
+</body>
+
+<template name="chatBox">
+    <p>Enter a user name: <input id="userName" type="text" value="" /></p>
+    <div style="border: 1px solid; padding: 10px; overflow-y: scroll; height: 510px">
+    {{#each messages}}<pre><span class="name">{{userName}}</span>: <span class="message">{{message}}</span></pre>{{/each}}
+    </div>
+    <form>
+        <p>Say something:<input id="chatInput" /><input type="submit" value="Say it" /></p>
+    </form>
+</template>

@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+body{
+    padding-left: 40px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+
+}
+
+.main{
+    -webkit-column-count:2; /* Chrome, Safari, Opera */
+    -moz-column-count:2; /* Firefox */
+    column-count:2;
+    column-fill: auto;
+}
+
+.message{
+}
+
+.name{
+    font-weight: 600;
+}
